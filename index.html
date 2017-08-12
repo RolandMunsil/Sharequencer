@@ -1,5 +1,5 @@
 <script>
 var url = window.location.href;
-var song = url.split("=")[1];
+var song = url.substring(url.indexOf("=")+1);
 window.location = "stepquencer://load?s=" + song;
 </script>
